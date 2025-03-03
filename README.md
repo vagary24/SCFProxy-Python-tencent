@@ -64,7 +64,7 @@
 
 2. 而开启云函数后（例如：python setup.py install -a domestic），云函数信息会记录在cities.txt文件中
 
-   ![setup](./img\setup.png)
+   ![setup](./img/setup.png)
 
 3. 开启mitmproxy代理
 
@@ -105,7 +105,7 @@
    ```
 
    当出现这样多处ip地址就成功了
-
+   
    ![image-20250303012252932](./img/image-20250303012252932.png)
 
 5. 正常使用直接挂代理就可以了
