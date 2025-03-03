@@ -1,5 +1,6 @@
 # Help
-
+由于腾讯云停用api网关，导致原本的SCFProxy-Python项目中腾讯云云函数代理的项目失效，这里用函数url实现了云函数代理的功能，原项目是shimmeris师傅的python版本[https://github.com/shimmeris/SCFProxy](https://github.com/shimmeris/SCFProxy)
+由于项目是2024年10月写的，不知道原项目作者修改腾讯云api网关用不了的问题没有，这两天突然刚好用到就发了出来。
 ## 使用前置
 
 1. 在config.py中配置腾讯云SecretId和SecretKey
