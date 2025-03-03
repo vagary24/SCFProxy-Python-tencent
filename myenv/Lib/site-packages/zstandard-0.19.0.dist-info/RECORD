@@ -1,0 +1,14 @@
+zstandard-0.19.0.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
+zstandard-0.19.0.dist-info/LICENSE,sha256=wVso-IZlAL09YHxznodxCqXEdieqMKBXOUhBRWT_HaI,1511
+zstandard-0.19.0.dist-info/METADATA,sha256=vTIRLOJpCS9We5NOU_g2JNGJNTL0FEY61TUpnORHie4,2982
+zstandard-0.19.0.dist-info/RECORD,,
+zstandard-0.19.0.dist-info/WHEEL,sha256=fVcVlLzi8CGi_Ul8vjMdn8gER25dn5GBg9E6k9z41-Y,100
+zstandard-0.19.0.dist-info/top_level.txt,sha256=J-wj94pPadY4ipFaanrYBlrMblOSegEYS8o_LdogrpU,10
+zstandard/__init__.py,sha256=NxK861kCCvInvFnnjTbhN_bC1tIgfGWIMcbQ8Q2FtBQ,7312
+zstandard/__init__.pyi,sha256=pSHjizhT5doGnC1N2bFqFyTFafc1qSmApIhxIiBPDNc,14368
+zstandard/__pycache__/__init__.cpython-39.pyc,,
+zstandard/__pycache__/backend_cffi.cpython-39.pyc,,
+zstandard/_cffi.cp39-win_amd64.pyd,sha256=Z5Fj6GnfvnC0pneCPSnFaE69kJ72MtvpbWey1BT-snQ,786432
+zstandard/backend_c.cp39-win_amd64.pyd,sha256=6IHlHtJy1McHW66rCmiPNJPFAfC5C2Ciq36Vc_vPaE8,662016
+zstandard/backend_cffi.py,sha256=pbii1aS2BESnR2KfmUql4_fH6GHplGGD6OIiG14t9pA,155828
+zstandard/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
