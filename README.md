@@ -1,5 +1,6 @@
 # Help
-
+由于腾讯云停用api网关，导致原本的SCFProxy-Python项目中腾讯云云函数代理的项目失效，这里用函数url实现了云函数代理的功能，原项目是shimmeris师傅的python版本[https://github.com/shimmeris/SCFProxy](https://github.com/shimmeris/SCFProxy)
+由于项目是2024年10月写的，不知道原项目作者修改腾讯云api网关用不了的问题没有，这两天突然刚好用到就发了出来。如果遇到任何问题欢迎留言，长时间不回复请加微信king8n94
 ## 使用前置
 
 1. 在config.py中配置腾讯云SecretId和SecretKey
@@ -63,6 +64,8 @@
 
 2. 而开启云函数后（例如：python setup.py install -a domestic），云函数信息会记录在cities.txt文件中
 
+   ![setup](./img\setup.png)
+
 3. 开启mitmproxy代理
 
    #### 本地启动
@@ -74,7 +77,7 @@
    #### vps上启动
 
    **vps会有额外的延迟**，如果自己一个人用直接本地运行就行，运行在vps上**记得在策略组中开放端口**
-   
+
    ``` cmd
    // vps上启动要加 --set block_global=false
    // 建议加上proxyauth认证，避免被别人消耗
@@ -87,23 +90,31 @@
    tail -n 100 nohup.out
    ```
    #### 启动后在config.py中加入代理信息方便测试
-   
+
    ```python
    proxies = {
        'http': 'http://username:password@127.0.0.1:8080',
        'https': 'https://username:password@127.0.0.1:8080',  # 通常https代理也使用http协议
    }
    ```
-   
+
 4. 测试代理有效性
 
    ```cmd
    python ./intest.py   #先在config.py中配置代理再测试
    ```
-   
+
    当出现这样多处ip地址就成功了
-   
-   ![image-20250303012252932](.\img\image-20250303012252932.png)
+
+   ![image-20250303012252932](./img/image-20250303012252932.png)
 
 5. 正常使用直接挂代理就可以了
+    ![SCFProxy](./img/SCFProxy.png)
 
+6. 删除云函数
+
+  ```cmd
+  python setup.py delete
+  ```
+
+  ![delete](./img/delete.png)
