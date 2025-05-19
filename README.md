@@ -101,7 +101,7 @@
 4. 测试代理有效性
 
    ```cmd
-   python ./intest.py   #先在config.py中配置代理再测试
+   python ./iptest.py   #先在config.py中配置代理再测试
    ```
 
    当出现这样多处ip地址就成功了
